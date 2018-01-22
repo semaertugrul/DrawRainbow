@@ -25,7 +25,7 @@ public class DrawRainbow extends JPanel{
         
         int radius = 20;
            int centerX = getWidth() / 2; //use half width
-           int centerY = getHeight() - 10;//down 10 from top
+           int centerY = getHeight() - 10;//shift from bottom to top  10
             for (int counter = colors.length; counter > 0; counter--){
                 g.setColor(colors[counter - 1]);
                  g.fillArc(centerX - counter * radius, centerY - counter * radius, counter * radius * 2, counter * radius * 2, 0, 180 );
